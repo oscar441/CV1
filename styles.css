@@ -1,5 +1,56 @@
-body{
-    margin: 0;
-    background: rgb(116, 59, 59);
+*{
+    padding: 0%;
+    margin: 0%;
+    font-family: 'Courier New', Courier, monospace;
+}
+ul{
+    list-style: none;
+    background: #22438c;
+}
+ul li {
+    display: inline-block;
+    position: relative;
+}
+ul li a{
+    display: block;
+    padding: 20px 25px;
+    color: #FFF;
+    text-decoration: none;
     text-align: center;
+    font-size: 20px;
+}
+ul li ul.dropdown li{
+    display: block;
+}
+ul li ul.dropdown{
+    width: 100%;
+    background: #22438c;
+    position: absolute;
+    z-index: 999;
+    display: none;
+}
+ul li a:hover{
+background: #112c66;
+}
+ul li:hover ul.dropdown{
+    display: block;
+}
+
+body{
+    margin: 2cm;
+    background: rgb(185, 225, 243);
+    text-align: center;
+}
+
+h1{
+    color: blue;
+}
+
+p{
+    text-align: left;
+    color: rgb(97, 12, 235);
+}
+
+a{
+    color: rgb(51, 0, 255);
 }
